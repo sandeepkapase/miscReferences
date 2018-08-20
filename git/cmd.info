@@ -1,0 +1,2 @@
+# push/mirror one repository to anther
+git push --mirror https://github.com/sandeepkapase/examples.git
