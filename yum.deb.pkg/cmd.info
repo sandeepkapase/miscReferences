@@ -1,0 +1,14 @@
+* Which package provides this file.
+    # yum whatprovides '*bin/grep' # from repo cache
+    # rpm -qf /bin/grep            # already installed package
+    # dpkg -S /bin/grep            # already installed package
+
+* Install this rpm package.
+    # rpm -ivh xyz.rpm
+
+* List contents of package
+    # dpkg -L samba           ==> if package installed.
+    # apt-file list samba     ==> if package not installed.
+
+* Only download package
+    # apt-get --download-only install pkgname ==> to /var/cache/apt/archives
