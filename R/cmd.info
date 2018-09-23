@@ -1,0 +1,14 @@
+Install R on linux (centos/debian):
+    eg. yum install R.3.5 ==> centos
+    eg. R-3.5.1-win.ext   ==> Windows
+
+Start R interpreter or gui:
+    eg. # R            ==> R interpreter centos
+    eg. # R --gui=tk   ==> R gui centos
+    eg. R.exe          ==> R interpreter Windows
+    eg. Rgui.exe       ==> R gui Windows
+
+    From gui you can load R script file to execute.
+    For some package dependency we may need to install packages 
+    from R shell.
+    > install.packages('plot')
