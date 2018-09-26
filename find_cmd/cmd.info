@@ -1,7 +1,14 @@
 * exclude/skip directory in search
 ===================================
     eg: skip file/directory from .git directory)
+
     # find . -path "*/.git/*" -prune -o -type f -print
+
+    # find . -type f -print -o -ipath '*git*' -prune
+
+    ==> simplified explainations:
+        if condition given BEFORE prune is not satishfied then execute alternative/or part.
+                           ======                                                          
 
 # exclude/skip multiple directories in search
 =============================================
